@@ -8,5 +8,6 @@ module.exports = mongoose.model('User',{
 	email: String,
 	firstName: String,
 	lastName: String,
-	school: String
+	school: String,
+	verified: Boolean
 });

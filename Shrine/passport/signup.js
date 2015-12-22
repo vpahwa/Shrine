@@ -43,6 +43,7 @@ module.exports = function(passport){
                         newUser.firstName = req.param('firstName');
                         newUser.lastName = req.param('lastName');
                         newUser.school = school;
+                        newUser.verified = false;
 
                         // save the user
                         newUser.save(function(err) {
